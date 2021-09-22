@@ -1,0 +1,52 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  height: 80px;
+  background-color: black;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-size: 17px;
+  font-family: 'Montserrat Light';
+  justify-content: space-between;
+}
+
+.nav-menu {
+  position: absolute;
+  display: flex;
+  gap: 40px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.expand-contract-contracted {
+  visibility: hidden;
+  margin-top: 0px;
+  opacity: 0;
+}
+
+.expand-contract-expanded {
+  visibility: visible;
+  margin-top: 30px;
+  opacity: 1;
+}
+
+.nav-menu-item-dd {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: black;
+  width: 100%;
+  padding: 15px;
+  padding-top: 20px;
+  border-radius: 0 0 5px 5px;
+  transition: margin-top 1s, opacity 0.5s, visibility 0.5s;
+}
